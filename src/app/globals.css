@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+MX:wght@100..400&display=swap');
+
+/* 4636FC --> blue  */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::selection{
+  background-color: #05070f;
+  color: #e8f0f9;
+}
+
+html,
+body {
+  background-color: #e8f0f9;
+  /* background: rgb(240,250,255);
+background: linear-gradient(186deg, rgba(240,250,255,1) 0%, rgba(191,234,255,1) 62%); */
+  /* height: 100%; */
+  /* color: #061237; */
+  color: #05070f;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.font {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: bold;
+}
+.coffee a{
+  font-family: 'Playwrite México', sans-serif;
+}

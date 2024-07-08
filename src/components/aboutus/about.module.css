@@ -1,0 +1,53 @@
+.aboutuswrapper {
+  width: 100%;
+  margin: 0rem 0rem 3rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.aboutcontainer {
+  width: 65rem;
+  background-color: rgb(255, 255, 255);
+  padding: 3rem 4rem;
+  border-radius: 48px;
+}
+.imgwrapper{
+    width: 100%;
+    height: 30rem;
+}
+.imgwrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1100px) {
+    .aboutcontainer{
+        width: 50rem;
+    }
+    .imgwrapper{
+        height: 20rem;
+    }
+}
+@media (max-width: 850px) {
+    .aboutcontainer{
+        width: 90vw;
+        padding: 2rem 2rem;
+    }
+    .aboutcontainer h2{
+        text-align: start;
+        margin-bottom: 3px;
+    }
+    .aboutcontainer h1{
+        font-size: 8vw;
+        line-height: 1;
+        text-align: start;
+    }
+    .aboutcontainer p{
+        margin: 18px 0px;
+        font-size: 18px;
+        text-align: start;
+    }
+    .imgwrapper{
+        height: 13rem;
+    }
+}

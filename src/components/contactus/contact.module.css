@@ -1,0 +1,48 @@
+.contactuswrapper {
+    width: 100%;
+    margin: 0rem 0rem 5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .contactcontainer {
+    width: 65rem;
+    background-color: rgb(255, 255, 255);
+    padding: 3rem 4rem;
+    border-radius: 48px;
+  }
+  .contactform{
+      width: 100%;
+  }
+  
+  @media (max-width: 1100px) {
+      .contactcontainer{
+          width: 50rem;
+      }
+      /* .contactform{
+          height: 20rem;
+      } */
+  }
+  @media (max-width: 850px) {
+      .contactcontainer{
+          width: 90vw;
+          padding: 2rem 2rem;
+      }
+      .contactcontainer h2{
+          text-align: start;
+          margin-bottom: 3px;
+      }
+      .contactcontainer h1{
+          font-size: 8vw;
+          line-height: 1;
+          text-align: start;
+      }
+      .contactcontainer p{
+          margin: 18px 0px;
+          font-size: 18px;
+          text-align: start;
+      }
+      /* .contactform{
+          height: 13rem;
+      } */
+  }

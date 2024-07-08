@@ -1,0 +1,189 @@
+/* .sellnotes {
+  width: 100%;
+  margin: 5rem 0rem;
+  background-color: aquamarine;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3rem;
+}
+.sellnotescontainer{
+    width: 60rem;
+    padding: 30px;
+    background-color: bisque;
+}
+ */
+
+ .sellnotes {
+    width: 100%;
+    margin: 5rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  
+  .sellnotescontainer {
+    width: 90%;
+    max-width: 60rem;
+    padding: 40px;
+    /* background-color: #4636FC; */
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    border-radius: 10px;
+    color: #05070f;
+  }
+  
+  .formTitle {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+  }
+  
+  .formSubtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    opacity: 0.8;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .formRow {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  
+  .formGroup {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .formGroup label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .formGroup input,
+  .formGroup select,
+  .formGroup textarea {
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.372);
+    background-color: white;
+    color: #05070f;
+  }
+  
+  .formGroup input::placeholder {
+    color: #aaa;
+  }
+  
+  .dobInputs {
+    display: flex;
+    gap: 0.5rem;
+  }
+  
+  .dobInputs select {
+    flex: 1;
+  }
+  
+  .submitButton {
+    align-self: flex-end;
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .submitButton:hover {
+    background-color: #45a049;
+  }
+  .buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+  }
+  
+  .popup i{
+    font-size: 5rem;
+    color: green;
+    margin-bottom: 1rem;
+  }
+  
+  .popupButton {
+    margin-top: 2rem;
+    padding: 0.5rem 2rem;
+    background-color: #05070f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .sellnotescontainer {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    /* .formRow {
+      flex-direction: column;
+    } */
+  
+  
+    .submitButton {
+      align-self: stretch;
+    }
+  }
+  @media (max-width: 632px) {
+    .formRow {
+      flex-direction: column;
+    } 
+  }
+  
+  @media (max-width: 480px) {
+    .sellnotescontainer {
+      padding: 15px;
+      flex-direction: column;
+    }
+  
+    .formTitle {
+      font-size: 1.5rem;
+      
+    }
+  
+    .formSubtitle {
+      font-size: 0.9rem;
+    }
+
+  }

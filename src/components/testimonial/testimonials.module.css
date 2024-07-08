@@ -1,0 +1,241 @@
+/* .testiwrapper {
+    width: 100%;
+    margin: 0rem 0rem 3rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .testicontainer {
+    width: 65rem;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem 3rem;
+    border-radius: 48px;
+  }
+  .carouselwrapper{
+      width: 100%;
+      background-color: #e8f0f9;
+      height: 25rem;
+      display: flex;
+      margin: 10px 0px;
+      border-radius: 48px;
+      align-items: center;
+      justify-content: center;
+  }
+
+  @media (max-width: 1100px) {
+      .testicontainer{
+          width: 50rem;
+      }
+      .carouselwrapper{
+          height: 20rem;
+      }
+  }
+  @media (max-width: 850px) {
+      .testicontainer{
+          width: 90vw;
+          padding: 2rem 2rem;
+      }
+      .testicontainer h2{
+          text-align: start;
+      }
+      .testicontainer h1{
+          font-size: 8vw;
+          line-height: 1;
+          text-align: start;
+      }
+      .testicontainer p{
+          margin: 18px 0px;
+          font-size: 18px;
+          text-align: start;
+      }
+      .carouselwrapper{
+          height: 13rem;
+      }
+  } */
+
+  .testiwrapper {
+    width: 100%;
+    margin: 3rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .testicontainer {
+    width: 90%;
+    max-width: 1200px;
+    background-color: rgb(255, 255, 255);
+    padding: 2rem;
+    border-radius: 48px;
+  }
+  
+  .subtitle {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 3px;
+  }
+  
+  .title {
+    font-size: 48px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .description {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .carouselwrapper {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .carouselItem {
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  .slide0 {
+    left: 20%;
+    transform: translateX(-50%) scale(0.8);
+  }
+  
+  .slide1 {
+    left: 50%;
+    transform: translateX(-50%) scale(1);
+    z-index: 1;
+  }
+  
+  .slide2 {
+    left: 80%;
+    transform: translateX(-50%) scale(0.8);
+  }
+  
+  .testimonialCard {
+    background-color: #594bef;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: all 0.5s ease-in-out;
+    cursor: url('./hand.png'), pointer;
+  }
+  
+  .centerCard {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+  }
+  
+  .profileImage {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 20px;
+    object-fit: cover;
+  }
+  
+  .quoteText {
+    font-style: italic;
+    margin-bottom: 20px;
+    font-size: 14px;
+  }
+  
+  .authorName {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .authorTitle {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  .starRating {
+    color: gold;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 1024px) {
+    .carouselwrapper {
+      height: 350px;
+    }
+    
+    .carouselItem {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .testicontainer {
+      padding: 1.5rem;
+    }
+    
+    .title {
+      font-size: 36px;
+    }
+    
+    .description {
+      font-size: 16px;
+    }
+    
+    .carouselwrapper {
+      height: 300px;
+    }
+    
+    .carouselItem {
+      width: 80%;
+    }
+    
+    .slide0, .slide2 {
+      opacity: 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .testicontainer {
+      padding: 1rem;
+    }
+    
+    .title {
+      font-size: 28px;
+    }
+    
+    .carouselwrapper {
+      height: 300px;
+    }
+    
+    .carouselItem {
+      width: 90%;
+    }
+    
+    .quoteText {
+      font-size: 12px;
+    }
+    
+    .authorName {
+      font-size: 14px;
+    }
+    
+    .authorTitle {
+      font-size: 12px;
+    }
+    .testimonialCard img{
+        width: 70px;
+        height: 70px;
+    }
+  }
