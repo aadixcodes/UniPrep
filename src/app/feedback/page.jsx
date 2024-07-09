@@ -24,6 +24,12 @@ const Feedback = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    Swal.fire({
+      icon: 'success',
+      title: 'Form Submitted Successfully',
+      text: 'Thanks! For Filling Feedback Form',
+    });
+    
     console.log("Form submitted:", formData);
     const data = new FormData();
     data.append("Name", formData.Name);

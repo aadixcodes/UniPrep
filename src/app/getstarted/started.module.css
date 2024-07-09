@@ -202,10 +202,10 @@
     border-radius: 10px;
     overflow: hidden;
   }
-  .imageDiv img{
+  /* .imageDiv Image{
     width: 100%;
     height: 100%;
-  }
+  } */
   
   .popupOverlay {
     position: fixed;

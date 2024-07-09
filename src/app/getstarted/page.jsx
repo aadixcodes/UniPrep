@@ -489,6 +489,7 @@
 import { useState } from 'react';
 import styles from './started.module.css';
 import Link from 'next/link';
+// import Image from 'next/image';
 
 const features = [
   { title: "Exam Preparation", description: "Easily find the most important questions for your upcoming exams.", image: "./assets/exprepimg.png" },
@@ -589,7 +590,7 @@ const GetStarted = () => {
         before:bg-[#e8f0f9] hover:bg-[#e8f0f9] transition-[0.5s] before:-z-10 before:scale-0 hover:before:scale-100 before:origin-center overflow-hidden 
         hover:text-[#05070f] cursor-pointer">Get Started</button>
         <div className={styles.imageDiv}>
-          <img src={"./assets/welimg.gif"} alt="" />
+          <img src={"/assets/welimg.gif"} alt="" />
         </div>
       </div>
 
