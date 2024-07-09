@@ -664,6 +664,7 @@ const Sellnotes = () => {
     price: "",
     additionalComments: "",
   });
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const handleInputChange = (e) => {
     const { name, value, type, files } = e.target
@@ -750,6 +751,8 @@ const Sellnotes = () => {
             price: "",
             additionalComments: "",
           });
+          setShowSuccessMessage(true);
+      setTimeout(() => setShowSuccessMessage(false), 3000); // Hide message after 3 seconds
 
       } catch (error) {
         console.log(error);

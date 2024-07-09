@@ -137,6 +137,10 @@
 }
 
 @media (max-width: 550px) {
+  .notesitem{
+  height: 9rem;  
+  }
+
   .lside span {
     font-size: 12px;
   }

@@ -38,7 +38,7 @@ const hero = () => {
             Introducing UniPrep, your ultimate exam preparation tool
           </h4>
           <h1 className="text-[75px] font-bold text-center leading-[5rem]">
-            Achieve Academic Success <br /> with UniPrep
+            Achieve Academic Success <br /> with Aditya
           </h1>
           <p className="text-[22px] relative top-[-1rem] text-center">
             Prepare for your exams with ease. Access important topics, start a

@@ -16,6 +16,7 @@ const Feedback = () => {
     Likes: "",
     Improvements: "",
   });
+  const [showSuccessMessage, setShowSuccessMessage] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -29,7 +30,7 @@ const Feedback = () => {
       title: 'Form Submitted Successfully',
       text: 'Thanks! For Filling Feedback Form',
     });
-    
+
     console.log("Form submitted:", formData);
     const data = new FormData();
     data.append("Name", formData.Name);
@@ -63,6 +64,8 @@ const Feedback = () => {
         Likes: "",
         Improvements: "",
       });
+      setShowSuccessMessage(true);
+      setTimeout(() => setShowSuccessMessage(false), 3000); // Hide message after 3 seconds
     } catch (error) {
       console.log(error);
     }
