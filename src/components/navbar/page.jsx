@@ -49,13 +49,10 @@ const Navbar = () => {
             {isMobile && (
               <>
                 <li>
-                  <a href="/about">About Us</a>
+                  <a href="/AboutUs">About Us</a>
                 </li>
                 <li>
-                  <a href="/contact">Contact</a>
-                </li>
-                <li>
-                  <a href="/faq">FAQ</a>
+                  <a href="/ContactUs">Contact</a>
                 </li>
               </>
             )}
