@@ -1,8 +1,28 @@
+'use client';
+
 import styles from "./hero.module.css";
 // import { useAuth } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
+import { useRouter } from 'next/navigation';
+
 
 const hero = () => {
-  // const { userId } = useAuth();
+  // const { userId, isLoaded } = useAuth();
+  const { isLoaded, isSignedIn, user } = useUser();
+  const router = useRouter();
+
+
+  const handleStartStudy = () => {
+    if (isLoaded) {
+      if (isSignedIn) {
+        // User is signed in, redirect to /mynotes
+        router.push('/mynotes');
+      } else {
+        // User is not signed in, redirect to sign-up page
+        router.push('/sign-up');
+      }
+    }
+  };
 
   return (
     <>
@@ -45,31 +65,16 @@ const hero = () => {
             study plan, and get the resources you need. It's simpler than you
             think.
           </p>
-          {/* {!userId && (
-            <> */}
-            <a
-            href="/sign-up"
+          <a
+            onClick={handleStartStudy}
             className="relative text-[20px] px-7 py-4 rounded-[20px] border-2 border-[#05070f] bg-[#05070f] text-[#e8f0f9] duration-500
-        before:absolute before:w-full before:h-full before:transition-all before:duration-700 before:rounded-md 
-        before:bg-[#e8f0f9] hover:bg-[#e8f0f9] transition-[0.5s] before:-z-10 before:scale-0 hover:before:scale-100 before:origin-center overflow-hidden 
-        hover:text-[#05070f] cursor-pointer"
+            before:absolute before:w-full before:h-full before:transition-all before:duration-700 before:rounded-md 
+            before:bg-[#e8f0f9] hover:bg-[#e8f0f9] transition-[0.5s] before:-z-10 before:scale-0 hover:before:scale-100 before:origin-center overflow-hidden 
+            hover:text-[#05070f] cursor-pointer"
           >
-            Start your study
+            {isSignedIn ? 'Continue your study' : 'Start your study'}
           </a>
-            {/* </>
-          )} */}
-
-
-          {/* {userId && (
-            <a
-            href="/mynotes"
-            className="relative text-[20px] px-7 py-4 rounded-[20px] border-2 border-[#05070f] bg-[#05070f] text-[#e8f0f9] duration-500
-        before:absolute before:w-full before:h-full before:transition-all before:duration-700 before:rounded-md 
-        before:bg-[#e8f0f9] hover:bg-[#e8f0f9] transition-[0.5s] before:-z-10 before:scale-0 hover:before:scale-100 before:origin-center overflow-hidden 
-        hover:text-[#05070f] cursor-pointer"
-          ></a>
-          )} */}
-          
+  
           <h3 className="text-[18px] text-center">
             It's free, and you'll get important questions without any charges!
           </h3>

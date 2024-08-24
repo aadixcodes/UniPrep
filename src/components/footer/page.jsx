@@ -11,7 +11,7 @@ const Footer = () => {
             <a href="/feedback" className='hover:text-[#4636FC] duration-[500]'>Feedback</a>
             <a href="/earnmoney/sellnotes" className='hover:text-[#4636FC] duration-[500]'>Sell Notes</a>
             <a href="/notification" className='hover:text-[#4636FC] duration-[500]'>Notification</a>
-            <a href="/signup" className='hover:text-[#4636FC] duration-[500]'>Signup</a>
+            <a href="/sign-up" className='hover:text-[#4636FC] duration-[500]'>Signup</a>
         </div>
         <div className={styles.coffee}>
             <img src={"./assets/coffesvg.png"} alt="" width={40} height={40} />

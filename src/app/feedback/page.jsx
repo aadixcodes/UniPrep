@@ -203,6 +203,7 @@ const Feedback = () => {
             onChange={handleChange}
           >
             <option value="">Choose Option</option>
+            <option value="unit-wise-notes">Unit Wise Notes</option>
             <option value="important-questions">Important Questions</option>
             <option value="pyqs">Previous Years' Questions (PYQs)</option>
             <option value="notes">Selling/Buying Notes</option>
